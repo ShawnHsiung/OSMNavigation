@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="shawn.thesis.osmnavigation">
+    //normal permissions
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    //dangerous permissions
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-feature
+            android:name="android.hardware.bluetooth_le"
+            android:required="false" />
+
+        <meta-data
+            android:name="Mapzen.Search"
+            android:value="search-TZDGmnH" />
+        <meta-data
+            android:name="Mapzen.Routing"
+            android:value="valhalla-9E4F1AM" />
+        <meta-data
+            android:name="MapQuest.Routing"
+            android:value="5dQB0lULAQG8VBAtXOFFf0je74iqGetF" />
+        <meta-data
+            android:name="GRAPHHOPPER_API_KEY"
+            android:value="63a5a881-39ed-4a1e-a273-bc749d142c95" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".BluetoothLeService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

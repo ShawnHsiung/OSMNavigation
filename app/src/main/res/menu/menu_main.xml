@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="shawn.thesis.osmnavigation.MainActivity">
+
+    <group
+        android:id="@+id/main_menu_group">
+        <item
+            android:id="@+id/action_connect"
+            android:orderInCategory="100"
+            android:title="@string/action_connect"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_disconnect"
+            android:orderInCategory="100"
+            android:title="@string/action_disconnect"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_commands"
+            android:orderInCategory="100"
+            android:title="@string/action_commands"
+            app:showAsAction="never" />
+    </group>
+
+</menu>

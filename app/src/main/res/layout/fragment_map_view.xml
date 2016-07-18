@@ -1,0 +1,61 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shawn.thesis.osmnavigation.MapViewFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <org.osmdroid.views.MapView android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/panel_instructions"
+        android:layout_marginBottom="-200dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_instruction"
+            android:textAlignment="center"
+            android:background="@color/colorWhite" />
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_delete"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:backgroundTint="#FFFFFF"
+        app:layout_anchor="@id/panel_instructions"
+        app:layout_anchorGravity="top|left|start"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/directions"
+        android:layout_gravity="bottom|right|end"
+        app:backgroundTint="#2962FF"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/gps_fix"
+        android:layout_gravity="top|right|end"
+        app:backgroundTint="#FFFFFF"
+        app:layout_anchor="@id/fab_direction"
+        app:layout_anchorGravity="top|left|end"
+        />
+</android.support.design.widget.CoordinatorLayout>

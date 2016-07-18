@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">OSMNavigation</string>
+
+    <string name="action_commands">Test</string>
+    <string name="action_connect">Connect</string>
+    <string name="action_disconnect">Disconnect</string>
+
+    <string name="label_left_text">Left Command</string>
+    <string name="label_right_text">Right Command</string>
+    <string name="label_forward_text">Forward Command</string>
+    <string name="label_stop_text">Stop Command</string>
+    <string name="save_setting">Save</string>
+    <string name="set_setting">Set</string>
+
+    <string name="button_search">Search Route</string>
+    <string name="item_car">Driving</string>
+    <string name="item_bike">Biking</string>
+    <string name="item_walk">Walking</string>
+
+    <string name="step">Step</string>
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="unknown_device">Unknown Device</string>
+
+    <string name="unknown_service">unknown service</string>
+    <string name="unknown_characteristic">unknown characteristic</string>
+
+    <string name="ble_device_address">F6:5D:E3:B7:E6:72</string>
+
+    <string name="light_off">0001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</string>
+    <string name="left_command">0100101000000000000000000000000000000000000000000000000000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</string>
+    <string name="right_command">0100101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011100000000000000000000000000000</string>
+    <string name="forward_command">0001111100011100000011100000011100000011100000011100000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</string>
+    <string name="stop_command">0001111111100000000000000011100000011100000000000000011100000000000000011100000000000000011100000011100000000000000011100000000000000000000000000000000000000000</string>
+
+</resources>
